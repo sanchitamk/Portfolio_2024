@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  background-color: #191919;
+  padding-left: 12em; /* Padding on the left side */
+  padding-right: 12em; /* Padding on the right side */
+}
+
+/* Adjusting the position of text and paragraph */
+.col-md-7 {
+  padding-left: 1.5em; /* Remove default padding */
+  margin-right: 5.4em; /* Remove default padding */
+}
+
+.mt-5 img {
+  width: 22em;
+ justify-content:space-between ;
+ 
+}
+
+.mt-5  {
+    margin-top:0
+  }
+
+/* Add padding to the top and bottom of "I'm Sanchita" */
+.col-md-7 h1 {
+  padding-bottom: 0.3em; /* Adjust the padding as needed */
+  font-size: 4em; /* Adjust the font size as needed */
+}
+
+/* Add padding to the top and bottom of the paragraph */
+.col-md-7 p {
+  padding-top: 0.2em; /* Adjust the padding as needed */
+  padding-bottom: 1em; /* Adjust the padding as needed */
+  max-width: 70%; /* Adjust the width as needed */
+  line-height: 1.5em; /* Adjust the width as needed */
+  font-size: 1.6em;
+}
+
+/* Add padding to the top and bottom of the button */
+.col-md-7 button {
+  margin-top: 1em; /* Adjust the padding as needed */
+  width: 11em; /* Adjust the width as needed */
+  height: 3em; /* Adjust the height as needed */
+}
+
+/* Open Sans Light */
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("assets/OpenSans-Light.ttf") format("truetype"); /* Specify the path to your font file */
+}
+
+/* Open Sans Regular */
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("assets/OpenSans-Regular.ttf") format("truetype");
+}
+
+/* Playfair Display Black */
+@font-face {
+  font-family: "Playfair Display Black";
+  src: url("assets/PlayfairDisplay-Black.ttf") format("truetype");
+}
+
+/* Playfair Display Bold */
+@font-face {
+  font-family: "Playfair Display Bold";
+  src: url("assets/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+/* Playfair Display Semi-Bold */
+@font-face {
+  font-family: "Playfair Display SemiBold";
+  src: url("assets/PlayfairDisplay-SemiBold.ttf") format("truetype");
+}
+
+/* Playfair Display Regular */
+@font-face {
+  font-family: "Playfair Display Regular";
+  src: url("assets/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display Bold";
+  color: #f3f0ef;
+}
+
+p {
+  color: #f3f0ef;
+  font-family: "Open Sans Light";
+}
+
+.navbar {
+  margin: 0;
+  width: 100%;
+  height: 2.5em;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3em;
+}
+
+.navbar .nav-link {
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  margin: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 5em;
+  color: #f3f0ef;
+  border-radius: 0px 0px 3em 3em;
+  font-family: "Playfair Display Regular";
+  margin-left: 1.8em;
+}
+
+.navbar .nav-link:hover {
+  background-color: #a74e0e;
+  border-radius: 0em 0em 3em 3em;
+  color: white;
+}
+
+.collapse.navbar-collapse {
+  height: 2.5em;
+  margin-right: 2em;
+}
+
+.container,
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.moving-text-container {
+  width: 100%;
+  height: 1em;
+  margin-top: 4em;
+  padding-bottom: 2em;
+ 
+  
+}
+
+.navbar-brand {
+  font-family: "Playfair Display Black";
+  color: #f3f0ef;
+}
+
+.navbar-brand:hover {
+  font-family: "Playfair Display Black";
+  color: #a74e0e;
+}
+
+.moving-text {
+  white-space: nowrap;
+  width: 200%;
+  animation: move-strip 18s linear infinite;
+  opacity: 0.4;
+  
+}
+
+.moving-text h1 {
+  font-weight: 100;
+  font-size: 2em;
+  font-family: "Playfair Display Regular";
+  letter-spacing: 0.18em;
+}
+
+.btn {
+  background-color: #a74e0e;
+  border-radius: 5em;
+  border: none;
+  font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.btn:hover {
+  background-color: #431304;
+  border-radius: 5em;
+  border: none;
+}
+
+@keyframes move-strip {
+  0% {
+    transform: translateX(-250%);
+  }
+  100% {
+    transform: translateX(120%);
+  } /* Adjust the value based on the width of the container */
+}
