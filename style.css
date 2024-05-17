@@ -1,52 +1,61 @@
+/* Base styles */
 body {
   margin: 0;
   background-color: #191919;
-  padding-left: 12em; /* Padding on the left side */
-  padding-right: 12em; /* Padding on the right side */
+  padding-left: 12em;
+  padding-right: 12em;
+  overflow-x: hidden;
 }
 
 /* Adjusting the position of text and paragraph */
 .col-md-7 {
-  padding-left: 1.5em; /* Remove default padding */
-  margin-right: 5.4em; /* Remove default padding */
+  padding-left: 1.5em;
+  margin-right: 5.4em;
 }
 
 .mt-5 img {
   width: 22em;
- justify-content:space-between ;
- 
+  justify-content: space-between;
 }
 
-.mt-5  {
-    margin-top:0
-  }
+.mt-5 {
+  margin-top: 0;
+}
 
 /* Add padding to the top and bottom of "I'm Sanchita" */
 .col-md-7 h1 {
-  padding-bottom: 0.3em; /* Adjust the padding as needed */
-  font-size: 4em; /* Adjust the font size as needed */
+  padding-bottom: 0.3em;
+  font-size: 4em;
 }
+.align-items-center {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+ 
 
+}
 /* Add padding to the top and bottom of the paragraph */
 .col-md-7 p {
-  padding-top: 0.2em; /* Adjust the padding as needed */
-  padding-bottom: 1em; /* Adjust the padding as needed */
-  max-width: 70%; /* Adjust the width as needed */
-  line-height: 1.5em; /* Adjust the width as needed */
+  padding-top: 0.2em;
+  padding-bottom: 1em;
+  max-width: 70%;
+  line-height: 1.5em;
   font-size: 1.6em;
 }
 
 /* Add padding to the top and bottom of the button */
 .col-md-7 button {
-  margin-top: 1em; /* Adjust the padding as needed */
-  width: 11em; /* Adjust the width as needed */
-  height: 3em; /* Adjust the height as needed */
+  margin-top: 1em;
+  width: 11em;
+  height: 3em;
+  font-size: 1.2em;
 }
 
 /* Open Sans Light */
 @font-face {
   font-family: "Open Sans Light";
-  src: url("assets/OpenSans-Light.ttf") format("truetype"); /* Specify the path to your font file */
+  src: url("assets/OpenSans-Light.ttf") format("truetype");
 }
 
 /* Open Sans Regular */
@@ -137,26 +146,24 @@ p {
   height: 1em;
   margin-top: 4em;
   padding-bottom: 2em;
- 
-  
 }
 
 .navbar-brand {
   font-family: "Playfair Display Black";
-  color: #f3f0ef;
+  color: #a74e0e;
+  font-size: 2em;
 }
 
 .navbar-brand:hover {
   font-family: "Playfair Display Black";
-  color: #a74e0e;
+  color: #f3f0ef;
 }
 
 .moving-text {
   white-space: nowrap;
   width: 200%;
-  animation: move-strip 18s linear infinite;
+  animation: move-strip 25s linear infinite;
   opacity: 0.4;
-  
 }
 
 .moving-text h1 {
@@ -170,7 +177,7 @@ p {
   background-color: #a74e0e;
   border-radius: 5em;
   border: none;
-  font-size: 1.2em; /* Adjust the font size as needed */
+  font-size: 1.2em;
 }
 
 .btn:hover {
@@ -181,9 +188,269 @@ p {
 
 @keyframes move-strip {
   0% {
-    transform: translateX(-250%);
+    transform: translateX(-500%);
   }
   100% {
     transform: translateX(120%);
-  } /* Adjust the value based on the width of the container */
+  }
 }
+
+/* Responsive styles */
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+
+  .col-md-7 h1 {
+    font-size: 3.5em;
+  }
+
+  .col-md-7 p {
+    font-size: 1.4em;
+  }
+
+  .btn {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+
+  .col-md-7 h1 {
+    font-size: 3.5em;
+  }
+
+  .col-md-7 p {
+    font-size: 1.4em;
+  }
+
+  .btn {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+ 
+
+  /* Adjusting the position of text and paragraph */
+  .col-md-7 {
+    padding-left: 0;
+    padding-right: 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0em; /* Center the col-md-7 within its parent */
+  }
+
+  .mt-5 img {
+    width: 80%; /* Ensure the image is responsive */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+
+  
+
+  /* Add padding to the top and bottom of "I'm Sanchita" */
+  .col-md-7 h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+  }
+
+  /* Add padding to the top and bottom of the paragraph */
+  .col-md-7 p {
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 1em;
+    
+    
+  }
+
+
+  /* Hide the button on smaller screens */
+  .col-md-7 button {
+    display: none;
+  }
+
+  .navbar {
+    margin: 0;
+    height: 2em;
+    padding-top: 1em;
+    padding-left: 0;
+  }
+
+.navbar-brand  {
+
+    font-size: 1.5em;
+    padding:0
+  }
+
+  .navbar .nav-link {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 5em;
+    color: #f3f0ef;
+    border-radius: 0px 0px 3em 3em;
+    font-family: "Playfair Display Regular";
+    margin-left: em;
+  }
+
+
+  .collapse.navbar-collapse {
+    height: 2em;
+    
+  }
+
+
+  .moving-text-container {
+    width: 100%;
+    height: 1em;
+    margin-top: 2.5em;
+    padding-bottom: 1em;
+  }
+
+
+  .moving-text h1 {
+    font-weight: 100;
+    font-size: 1.2em;
+    font-family: "Playfair Display Regular";
+    letter-spacing: 0.18em;
+  }
+
+}
+  
+
+@media (max-width: 600px) {
+  /* Base styles */
+ 
+    body {
+      padding-left: 2em;
+      padding-right: 2em;
+      overflow-x: hidden;
+    }
+  
+   
+  
+    /* Adjusting the position of text and paragraph */
+    .col-md-7 {
+      padding-left: 0;
+      padding-right: 0;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0em; /* Center the col-md-7 within its parent */
+    }
+  
+    .mt-5 img {
+      width: 80%; /* Ensure the image is responsive */
+      display: block;
+      margin: 0 auto; /* Center the image */
+    }
+  
+
+    .mt-5 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .align-items-center{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+    
+  
+    /* Add padding to the top and bottom of "I'm Sanchita" */
+    .col-md-7 h1 {
+      padding-bottom: 0.3em;
+      font-size: 2em;
+    }
+  
+    /* Add padding to the top and bottom of the paragraph */
+    .col-md-7 p {
+      padding-top: 0.2em;
+      padding-bottom: 1em;
+      line-height: 1.5em;
+      font-size: 1em;
+      
+      
+    }
+  
+  
+    /* Hide the button on smaller screens */
+    .col-md-7 button {
+      display: none;
+    }
+  
+    .navbar {
+      margin: 0;
+      height: 2em;
+      padding-top: 1em;
+      padding-left: 0;
+    }
+
+  .navbar-brand  {
+  
+      font-size: 1.5em;
+      padding:0
+    }
+  
+    .navbar .nav-link {
+      transition: background-color 0.3s ease, padding 0.3s ease;
+      margin: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      line-height: 5em;
+      color: #f3f0ef;
+      border-radius: 0px 0px 3em 3em;
+      font-family: "Playfair Display Regular";
+      margin-left: em;
+    }
+  
+  
+    .collapse.navbar-collapse {
+      height: 2em;
+      
+    }
+  
+
+    .moving-text-container {
+      width: 100%;
+      height: 1em;
+      margin-top: 2.5em;
+      padding-bottom: 1em;
+    }
+  
+  
+    .moving-text h1 {
+      font-weight: 100;
+      font-size: 1.2em;
+      font-family: "Playfair Display Regular";
+      letter-spacing: 0.18em;
+    }
+  
+  }
+  
+
+
+
+
+
