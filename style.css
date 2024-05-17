@@ -387,12 +387,10 @@ p {
     /* Add padding to the top and bottom of the paragraph */
     .col-md-7 p {
       padding-top: 0.2em;
-      padding-bottom: 1em;
+      padding-bottom: 1.2em;
       line-height: 1.5em;
-      font-size: 0.9em;
-   margin:0;
-   width:100%
-      
+      font-size: 1em;
+      width:100%
       
     }
   
